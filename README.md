@@ -23,7 +23,7 @@ If it is 500 (Internal Server Error), error message will be value of key 'error'
 
 ### Example:  
 import requests  
-url = http://127.0.0.1:5000?symbol=AAPL  
+url = http://127.0.0.1:5000?symbol=AAPL&interval=1d&period=5d  
 response = requests.get(url)  
 data = response.json()  
 print(data)
