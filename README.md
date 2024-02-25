@@ -1,8 +1,9 @@
 ### What is this  
 This application builds a Flask microsevice that handles incoming GET requests and associated parameters, calls yfinance data feed API, and responds with the appropriate data (or error messages if appropriate).
 
+To install, clone the repo, then do 'pip install -r requirements.txt' from inside the project root folder.
+
 ### Requesting Data:  
-clone, then 'python app.py'  
 send GET request to end point: http://127.0.0.1:5000?symbol=AAPL[&param1=parameter][&param2=anotherparameter]...  
 Parameters can be in any order but the first 'symbol' param MUST be present.  
 
