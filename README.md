@@ -3,7 +3,7 @@ This application builds a Flask microsevice that handles incoming GET requests a
 Requesting Data: send GET request to end point: http://127.0.0.1:5000?symbol=AAPL[&param1=parameter][&param2=anotherparameter]...  
 Parameters can be in any order but the first 'symbol' param MUST be present.  
 
-Valid parameters:
+Valid parameters:  
 period: data period to download (Either Use period parameter or use start and end)  
 Valid periods are: 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max  
 interval: data interval (intraday data cannot extend last 60 days)  
