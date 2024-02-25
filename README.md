@@ -1,10 +1,13 @@
 This application builds a Flask microsevice that handles incoming GET requests and associated parameters, calls yfinance data feed API, and responds with the appropriate data (or error messages if appropriate).
 
-Requesting Data: send GET request to end point: http://127.0.0.1:5000?symbol=AAPL[&param1=parameter]...
+Requesting Data: send GET request to end point: http://127.0.0.1:5000?symbol=AAPL[&param1=parameter][&param2=anotherparameter]...  
+Parameters can be in any order but the first 'symbol' param MUST be present.  
 
 Valid parameters:
-period: data period to download (Either Use period parameter or use start and end) Valid periods are: 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max  
-interval: data interval (intraday data cannot extend last 60 days) Valid intervals are: 1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo  
+period: data period to download (Either Use period parameter or use start and end)  
+Valid periods are: 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max  
+interval: data interval (intraday data cannot extend last 60 days)  
+Valid intervals are: 1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo  
 start: If not using period - Download start date string (YYYY-MM-DD) or datetime.  
 end: If not using period - Download end date string (YYYY-MM-DD) or datetime.  
 prepost: Include Pre and Post market data in results? (Default is False)  auto_adjust: Adjust all OHLC automatically? (Default is True)  
