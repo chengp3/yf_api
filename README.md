@@ -16,7 +16,10 @@ Parameters can be in any order but the first 'symbol' param MUST be present.
 **prepost**: Include Pre and Post market data in results? (Default is False)  
 **auto_adjust**: Adjust all OHLC automatically? (Default is True)  
 
-Returned data is a JSON object (call .json() method on response). Data will be value of key 'data', and status code will be in key 'status_code'. Status code will either be 200 or 500. If it is 500 (Internal Server Error), error message will be value of key 'error'.
+Returned data is a JSON object (call .json() method on response).  
+Data will be value of key 'data', and status code will be in key 'status_code'.  
+Status code will either be 200 or 500.  
+If it is 500 (Internal Server Error), error message will be value of key 'error'.
 
 ### Example:  
 import requests  
